@@ -1,0 +1,30 @@
+1.0
+-Local directory scanning for aac and mp3 files
+-RSS file output with multiple channel support
+
+1.1
+-Added interactive interface with input of "-U"
+-Added URL encoding for all special characters
+
+2.0
+-If "-U" is present, all other input is ignored
+-Added support for out of order input
+-Added support for extracting title and author information from ID3 tags
+-Supports UTF-16 ID3 tags but only if using standard UTF-8 characters (only if the first byte is null). This is untested because I have no mp3s with UTF-16 encoded tags.
+
+2.1
+-Improved code readability (again)
+-Improved code divisibility (i.e. made more functions out of current, repetitive code)
+-Added common "--help" "/?" methods
+-Added verbosity flag which allows various levels of debug output
+-Fixed a bug where ignoring an incorrect parameter did not continue onto the next parameter
+-Added support for album and track sorting (Uses EXTREMELY inefficient and EXTREMELY horrible sorting code. I just wanted to get something out there. Planning to optimize it with a binary tree sort for version 2.2)
+-Added support for Video files (Only supported by PSP firmware 2.80 and up). I still have no way to test this until Devhook for 2.80 is released (which may be never). I know the file is formatted correctly, but I don't know which methods that I've implemented are supported on the PSP.
+-Added lots of memory sanity checks
+-Changed "aac and mp4" support to "m4a and mp4" support (mp4s are considered to be video by firmware 2.80 and up)
+
+2.1a
+-Fixed UTF-16 ID3 tag reading but only if using standard UTF-8 characters (only if the first byte is null). It turned out that Winamp outputs UTF-16 by default... so I bet some people were a tad upset with PSP RSS Feed Generator's lack of support until now.
+
+2.1b
+-Fixed bug in Unix(Mac)/Linux version which incorrectly converted apostrophes in titles and filenames.
