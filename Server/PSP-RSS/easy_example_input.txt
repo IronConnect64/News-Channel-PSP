@@ -1,1 +1,0 @@
--O music.xml -W "http://www.example.net/Music" -L "C:\Documents and Settings\Username\My Documents\My Music" -T "My Music"

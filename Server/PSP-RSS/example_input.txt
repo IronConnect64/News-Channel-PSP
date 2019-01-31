@@ -1,1 +1,0 @@
--O music.xml -W "http://www.example.net/Music" -L "C:\Documents and Settings\Username\My Documents\My Music" -T "My Music" -Z -0600 -C "http://www.example.net/Music" -D "The music from My Documents" -R "(c) Somebody. All rights reserved." -I "../images/example.jpg" -S both -M file -A E
